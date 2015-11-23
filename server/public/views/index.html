@@ -9,6 +9,32 @@
         <script type="text/javascript" src="/scripts/app.js"></script>
     </head>
     <body>
+      <p>An exercise in frustration</p>
+      <div class = "studentContainer">
+
+      </div>
+      <button class = "nextStudent">next
+      </button>
+      <button class = "prevStudent">prev
+      </button>
+
     </body>
+    <script id = "studentList" type = "text/x-handlebars-template">
+    <div class = "slideShow">
+      {{firstName}}
+      <div class = "students">
+        {{firstName}} {{lastName}}
+      </div>
+      <div class = "favMovies">
+        {{#each favoriteMovies}}
+        <p>
+          {{movieName}} {{releaseYear}}
+        </p>
+
+        {{/each}}
+      </div>
+
+    </div>
+  </script>
 
 </html>
